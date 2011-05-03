@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--
+Copyright 2009 California Institute of Technology. ALL RIGHTS
+RESERVED. U.S. Government Sponsorship acknowledged.
+-->
+<portlets>
+    <portlet
+        addview='edrnsite.portlets.QuickLinks'
+        title='Quick Links'
+        description='Portlet that shows some fascinating EDRN-related destinations'>
+        <for interface='plone.app.portlets.interfaces.IColumn' />
+        <for interface='plone.app.portlets.interfaces.IDashboard' />
+    </portlet>
+    <portlet
+        addview='edrnsite.portlets.DMCCRSS'
+        title='DMCC RSS'
+        description='Portlet that shows the bizarre RSS from the DMCC'>
+        <for interface='plone.app.portlets.interfaces.IColumn' />
+        <for interface='plone.app.portlets.interfaces.IDashboard' />
+    </portlet>
+</portlets>

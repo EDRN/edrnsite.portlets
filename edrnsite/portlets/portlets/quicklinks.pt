@@ -1,0 +1,52 @@
+<div class='portlet edrnQuickLinks'
+    i18n:domain='edrnsite.portlets'
+    tal:define='portalURL context/@@plone_portal_state/portal_url;'>
+    <ul id='edrn-quicklinks'>
+        <li id='q-newMembers'>
+            <a href='#' tal:attributes='href string:http://www.compass.fhcrc.org/enteredrn/' i18n:translate='q-newMembers'>
+                Secure Site
+            </a>
+        </li>
+        <li id='q-advocates'>
+            <a href='#' tal:attributes='href string:${portalURL}/advocates' i18n:translate='q-advocates'>
+                Public, Patients, Advocates
+            </a>
+        </li>
+        <li id='q-fund'>
+            <a href='#' tal:attributes='href string:${portalURL}/funding-opportunities' i18n:translate='q-fund'>
+                Funding Opportunities
+            </a>
+        </li>
+        <li id='q-sites'>
+            <a href='#' tal:attributes='href string:${portalURL}/sites' i18n:translate='q-sites'>Sites</a>
+        </li>
+        <li id='q-members'>
+            <a href='#' tal:attributes='href string:${portalURL}/members-list' i18n:translate='q-members'>Members</a>
+        </li>
+        <li id='q-committees'>
+            <a href='#' tal:attributes='href string:${portalURL}/committees' i18n:translate='q-committees'>
+                Committees
+            </a>
+        </li>
+        <li id='q-standards'>
+            <a href='http://edrn.jpl.nasa.gov/standards/' i18n:translate='q-standards'>
+                Biomarker Informatics Standards
+            </a>
+        </li>
+        <li id='q-dcp'>
+            <a class='link-plain' href='http://prevention.cancer.gov' i18n:translate='q-dcp'>
+                Division of Cancer Prevention
+            </a>
+        </li>
+        <li id='q-cbrg'>
+            <a class='link-plain' href='http://prevention.cancer.gov/programs-resources/groups/cb/' i18n:translate='q-cbrg'>
+                Cancer Biomarkers Research Group
+            </a>
+        </li>
+        <li id='q-book'>
+            <a href='#' tal:attributes='href string:${portalURL}/docs' i18n:translate='q-book'>
+                Bookshelf
+            </a>
+        </li>
+    </ul>
+</div>

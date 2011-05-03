@@ -1,0 +1,26 @@
+<dl class="portlet portletRss portletDMCCRSS"
+    i18n:domain="plone"
+    tal:condition="view/enabled">
+
+    <dt class="portletHeader">
+        <span class="portletTopLeft"></span>
+        <span class="portletTopRight"></span>
+    </dt>
+    <tal:rss tal:condition="view/feedAvailable"
+                tal:define="toLocalizedTime nocall:context/@@plone/toLocalizedTime"
+                tal:repeat="item view/items">
+        <dd class="portletItem oddrow" 
+            tal:define="oddrow repeat/item/odd"
+            tal:attributes="class python:oddrow and 'portletItem even' or 'portletItem odd'">
+
+                <span class='stupidTitle' tal:content="item/title">
+                    Stupid Title
+                </span>
+                <span class="portletItemDetails" 
+                      tal:condition="exists:item/updated">
+                      <span tal:replace="structure item/summary">Stupid Summary</span>
+                </span>
+
+        </dd>
+    </tal:rss>
+</dl>

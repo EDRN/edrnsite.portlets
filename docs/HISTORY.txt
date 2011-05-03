@@ -1,0 +1,66 @@
+Changelog
+=========
+
+What follows is a history of changes from release to release.  For issues
+mentioned below, you can learn more about them by visiting the issue tracker
+at https://oodt.jpl.nasa.gov/jira/browse/CA.
+
+
+1.1.0 - Plone 4
+---------------
+
+This release makes edrnsite.portlets compatible with Plone 4.
+
+
+1.0.2 - Flip Flop
+-----------------
+
+This release fixes the following single issue:
+
+* CA-692 - Modify top Portlet on left side to link to EDRN Secure Site
+
+
+1.0.1 - Missing Button
+----------------------
+
+Thought Leader Dan said he wanted Specimens to be treated as a first class
+citizen in the portal, which means it should be a global navigation tab across
+the top and not a button on the QuickLinks portlet.  This release removes the
+Specimens button.  (There is no issue ID; this requirement was conveyed via
+telephone.)
+
+
+1.0.0 - New Button
+------------------
+
+This release adds a button to the QuickLinks portlet that takes you to the
+nifty Members List search page.  It also addresses the following issues:
+
+* CA-642 - Create a new member page
+
+You can learn more about this issue by visiting the Informatics Center's issue
+tracker at https://oodt.jpl.nasa.gov/jira/browse/CA.
+
+
+0.0.2 - Short URLs Bad, Long URLs Good?
+---------------------------------------
+
+This release addresses the following issue:
+
+* https://oodt.jpl.nasa.gov/jira/browse/CA-562 - Biomarker Informatics
+  Standards - button should take you directly to the wiki page
+
+
+0.0.1 - Quicklinks Reordering
+-----------------------------
+
+The following issues have been addressed in this release:
+
+* http://oodt.jpl.nasa.gov/jira/browse/CA-466 - Change order of links on the
+  left side menu of the portal
+
+
+0.0.0 - Unreleased
+------------------
+
+Initial release into beta.
