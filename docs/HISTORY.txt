@@ -6,6 +6,13 @@ mentioned below, you can learn more about them by visiting the issue tracker
 at https://oodt.jpl.nasa.gov/jira/browse/CA.
 
 
+1.1.1 - Upgrade Cleanup
+-----------------------
+
+This release updates the GenericSetup profile to 4 and adds upgrade steps to
+that profile.
+
+
 1.1.0 - Plone 4
 ---------------
 
