@@ -5,6 +5,12 @@ What follows is a history of changes from release to release.  For issues
 mentioned below, you can learn more about them by visiting the issue tracker
 at https://oodt.jpl.nasa.gov/jira/browse/CA.
 
+1.1.2 - Collaborative Groups
+----------------------------
+
+This release updates the QuickLinks portlet by adding a button for
+Collaborative Groups right at the top.
+
 
 1.1.1 - Upgrade Cleanup
 -----------------------

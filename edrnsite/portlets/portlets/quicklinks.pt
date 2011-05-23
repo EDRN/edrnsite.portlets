@@ -2,6 +2,11 @@
     i18n:domain='edrnsite.portlets'
     tal:define='portalURL context/@@plone_portal_state/portal_url;'>
     <ul id='edrn-quicklinks'>
+        <li id='q-collabGroups'>
+            <a href='#' tal:attributes='href string:${portalURL}/collaborative-groups' i18n:translate='q-collabGroups'>
+                Collaborative Groups
+            </a>
+        </li>
         <li id='q-newMembers'>
             <a href='#' tal:attributes='href string:http://www.compass.fhcrc.org/enteredrn/' i18n:translate='q-newMembers'>
                 Secure Site
