@@ -63,6 +63,8 @@ class TestRenderer(BaseTestCase):
         # CA-449 says we need a Specimens button—nope, not any more: Dan wants Specimens to be a globalnav tab.
         self.failIf('Specimens' in html)
         # CA-466 specifies a new order of portlets, adds Standards, removes Calendar
+        # Also, we have Collaborative Groups now as the #1 item
+        collabGrps = html.index('Collaborative Groups')
         advocates  = html.index('Public, Patients, Advocates')
         funding    = html.index('Funding Opportunities')
         sites      = html.index('Sites')
@@ -71,7 +73,7 @@ class TestRenderer(BaseTestCase):
         dcp        = html.index('Division of Cancer Prevention')
         cbrg       = html.index('Cancer Biomarkers Research Group')
         bookshelf  = html.index('Bookshelf')
-        self.failUnless(advocates < funding < sites < committees < standards < dcp < cbrg < bookshelf)
+        self.failUnless(collabGrps < advocates < funding < sites < committees < standards < dcp < cbrg < bookshelf)
         # CA-642 wants a "New Members" button, but CA-692 says it should be a link to EDRN Secure Site
         self.failIf('New Members' in html)
         self.failUnless('Secure Site' in html)
