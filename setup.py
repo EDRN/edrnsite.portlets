@@ -9,7 +9,7 @@ import os.path
 # ------------
 
 _name        = 'edrnsite.portlets'
-_version     = '1.1.2'
+_version     = '1.1.3'
 _description = 'Portlets for the EDRN Public Portal'
 _url         = 'http://cancer.jpl.nasa.gov/products/edrnsite-portlets'
 _downloadURL = 'http://oodt.jpl.nasa.gov/dist/edrnsite'
