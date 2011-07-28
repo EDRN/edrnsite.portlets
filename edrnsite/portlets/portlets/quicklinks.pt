@@ -26,7 +26,7 @@
             <a href='#' tal:attributes='href string:${portalURL}/sites' i18n:translate='q-sites'>Sites</a>
         </li>
         <li id='q-members'>
-            <a href='#' tal:attributes='href string:${portalURL}/members-list' i18n:translate='q-members'>Members</a>
+            <a href='#' tal:attributes='href string:${portalURL}/members-list' i18n:translate='q-members'>Member Directory</a>
         </li>
         <li id='q-committees'>
             <a href='#' tal:attributes='href string:${portalURL}/committees' i18n:translate='q-committees'>

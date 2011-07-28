@@ -5,27 +5,36 @@ What follows is a history of changes from release to release.  For issues
 mentioned below, you can learn more about them by visiting the issue tracker
 at https://oodt.jpl.nasa.gov/jira/browse/CA.
 
-1.1.2 - Collaborative Groups
+1.1.3 — People?
+---------------
+
+This release covers part of:
+
+* CA-789 - QuickLinks portlet: replace "Members" with "Member Directory"
+  (I still think "People" would be better!)
+
+
+1.1.2 — Collaborative Groups
 ----------------------------
 
 This release updates the QuickLinks portlet by adding a button for
 Collaborative Groups right at the top.
 
 
-1.1.1 - Upgrade Cleanup
+1.1.1 — Upgrade Cleanup
 -----------------------
 
 This release updates the GenericSetup profile to 4 and adds upgrade steps to
 that profile.
 
 
-1.1.0 - Plone 4
+1.1.0 — Plone 4
 ---------------
 
 This release makes edrnsite.portlets compatible with Plone 4.
 
 
-1.0.2 - Flip Flop
+1.0.2 — Flip Flop
 -----------------
 
 This release fixes the following single issue:
@@ -33,7 +42,7 @@ This release fixes the following single issue:
 * CA-692 - Modify top Portlet on left side to link to EDRN Secure Site
 
 
-1.0.1 - Missing Button
+1.0.1 — Missing Button
 ----------------------
 
 Thought Leader Dan said he wanted Specimens to be treated as a first class
@@ -43,7 +52,7 @@ Specimens button.  (There is no issue ID; this requirement was conveyed via
 telephone.)
 
 
-1.0.0 - New Button
+1.0.0 — New Button
 ------------------
 
 This release adds a button to the QuickLinks portlet that takes you to the
@@ -55,7 +64,7 @@ You can learn more about this issue by visiting the Informatics Center's issue
 tracker at https://oodt.jpl.nasa.gov/jira/browse/CA.
 
 
-0.0.2 - Short URLs Bad, Long URLs Good?
+0.0.2 — Short URLs Bad, Long URLs Good?
 ---------------------------------------
 
 This release addresses the following issue:
@@ -64,7 +73,7 @@ This release addresses the following issue:
   Standards - button should take you directly to the wiki page
 
 
-0.0.1 - Quicklinks Reordering
+0.0.1 — Quicklinks Reordering
 -----------------------------
 
 The following issues have been addressed in this release:
@@ -73,7 +82,7 @@ The following issues have been addressed in this release:
   left side menu of the portal
 
 
-0.0.0 - Unreleased
+0.0.0 — Unreleased
 ------------------
 
 Initial release into beta.
