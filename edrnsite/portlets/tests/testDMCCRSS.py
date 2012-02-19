@@ -1,19 +1,20 @@
 # encoding: utf-8
-# Copyright 2009 California Institute of Technology. ALL RIGHTS
+# Copyright 2009–2012 California Institute of Technology. ALL RIGHTS
 # RESERVED. U.S. Government Sponsorship acknowledged.
 
-from base import BaseTestCase
-from zope.app.component.hooks import setHooks, setSite
+import unittest2 as unittest
+from edrnsite.portlets.testing import EDRNSITE_PORTLETS_INTEGRATION_TESTING
 from edrnsite.portlets.portlets import dmccrss
 from plone.portlets.interfaces import IPortletType, IPortletAssignment, IPortletDataProvider, IPortletManager, IPortletRenderer
 from zope.component import getUtility, getMultiAdapter
 from Products.GenericSetup.utils import _getDottedName
 
-class TestPortlet(BaseTestCase):
-    def afterSetUp(self):
-        setHooks()
-        setSite(self.portal)
-        self.setRoles(('Manager',))
+class PortletTest(unittest.TestCase):
+    layer = EDRNSITE_PORTLETS_INTEGRATION_TESTING
+    def setUp(self):
+        super(PortletTest, self).setUp()
+        self.portal = self.layer['portal']
+        self.folder = self.portal['folder']
     def testPortletTypeRegistered(self):
         portlet = getUtility(IPortletType, name=u'edrnsite.portlets.DMCCRSS')
         self.assertEquals(portlet.addview, u'edrnsite.portlets.DMCCRSS')
@@ -45,10 +46,12 @@ class TestPortlet(BaseTestCase):
         renderer = getMultiAdapter((context, request, view, manager, assignment), IPortletRenderer)
         self.failUnless(isinstance(renderer, dmccrss.Renderer))
         
-class TestRenderer(BaseTestCase):
-    def afterSetUp(self):
-        setHooks()
-        setSite(self.portal)
+class RendererTest(unittest.TestCase):
+    layer = EDRNSITE_PORTLETS_INTEGRATION_TESTING
+    def setUp(self):
+        super(RendererTest, self).setUp()
+        self.portal = self.layer['portal']
+        self.folder = self.portal['folder']
     def renderer(self, context=None, request=None, view=None, manager=None, assignment=None):
         context = context or self.folder
         request = request or self.folder.REQUEST
@@ -61,10 +64,7 @@ class TestRenderer(BaseTestCase):
         self.assertEquals(False, r.enabled)
 
 def test_suite():
-    from unittest import TestSuite, makeSuite
-    suite = TestSuite()
-    suite.addTest(makeSuite(TestPortlet))
-    suite.addTest(makeSuite(TestRenderer))
-    return suite
+    return unittest.defaultTestLoader.loadTestsFromName(__name__)
 
-        
+if __name__ == '__main__':
+    unittest.main(defaultTest='test_suite')

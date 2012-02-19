@@ -1,5 +1,5 @@
 # encoding: utf-8
-# Copyright 2009-2011 California Institute of Technology. ALL RIGHTS
+# Copyright 2009–2012 California Institute of Technology. ALL RIGHTS
 # RESERVED. U.S. Government Sponsorship acknowledged.
 
 from setuptools import setup, find_packages
@@ -18,12 +18,15 @@ _authorEmail = 'sean.kelly@jpl.nasa.gov'
 _license     = 'Proprietary'
 _namespaces  = ['edrnsite']
 _entryPoints = {}
+_extras = {
+    'test': ['plone.app.testing'],
+}
 _zipSafe     = False
 _keywords    = 'web zope plone edrn cancer biomarkers portlet'
 _requirements = [
     'setuptools',
     'feedparser',
-    'Plone',
+    'Products.CMFPlone',
 ]
 _classifiers = [
     'Development Status :: 4 - Beta',
@@ -57,6 +60,7 @@ setup(
     description=_description,
     download_url=_downloadURL,
     entry_points=_entryPoints,
+    extras_require=_extras,
     include_package_data=True,
     install_requires=_requirements,
     keywords=_keywords,
