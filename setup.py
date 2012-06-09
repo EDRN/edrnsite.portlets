@@ -27,6 +27,7 @@ _requirements = [
     'setuptools',
     'feedparser',
     'Products.CMFPlone',
+    'zope.globalrequest',
 ]
 _classifiers = [
     'Development Status :: 4 - Beta',
