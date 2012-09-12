@@ -65,9 +65,11 @@ class RendererTest(unittest.TestCase):
         self.failUnless('Investigators' not in html)
         # CA-449 says we need a Specimens button—nope, not any more: Dan wants Specimens to be a globalnav tab.
         self.failIf('Specimens' in html)
+        # CA-972 changes label from "Collaborative Groups" to "Groups"
+        self.failIf('Collaborative Groups' in html)
         # CA-466 specifies a new order of portlets, adds Standards, removes Calendar
         # Also, we have Collaborative Groups now as the #1 item
-        collabGrps = html.index('Collaborative Groups')
+        collabGrps = html.index('Groups')
         advocates  = html.index('Public, Patients, Advocates')
         funding    = html.index('Funding Opportunities')
         sites      = html.index('Sites')

@@ -4,7 +4,7 @@
     <ul id='edrn-quicklinks'>
         <li id='q-collabGroups'>
             <a href='#' tal:attributes='href string:${portalURL}/collaborative-groups' i18n:translate='q-collabGroups'>
-                Collaborative Groups
+                Groups
             </a>
         </li>
         <li id='q-newMembers'>
