@@ -17,7 +17,9 @@ _author      = 'Sean Kelly'
 _authorEmail = 'sean.kelly@jpl.nasa.gov'
 _license     = 'Proprietary'
 _namespaces  = ['edrnsite']
-_entryPoints = {}
+_entryPoints = {
+    'z3c.autoinclude.plugin': ['target=plone'],
+}
 _extras = {
     'test': ['plone.app.testing'],
 }
@@ -28,6 +30,7 @@ _requirements = [
     'feedparser',
     'Products.CMFPlone',
     'zope.globalrequest',
+    'z3c.autoinclude',
 ]
 _classifiers = [
     'Development Status :: 4 - Beta',
