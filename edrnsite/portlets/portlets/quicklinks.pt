@@ -2,6 +2,16 @@
     i18n:domain='edrnsite.portlets'
     tal:define='portalURL context/@@plone_portal_state/portal_url;'>
     <ul id='edrn-quicklinks'>
+        <li id='q-nct'>
+            <a href='#' tal:attributes='href string:${portalURL}/network-consulting-team' i18n:translate='q-nct'>
+                Network Consulting Team
+            </a>
+        </li>
+        <li id='q-informatics'>
+            <a href='#' tal:attributes='href string:${portalURL}/informatics' i18n:translate='q-informatics'>
+                Informatics
+            </a>
+        </li>
         <li id='q-collabGroups'>
             <a href='#' tal:attributes='href string:${portalURL}/collaborative-groups' i18n:translate='q-collabGroups'>
                 Collaborative Groups

@@ -69,6 +69,8 @@ class RendererTest(unittest.TestCase):
         self.failUnless('Collaborative Groups' in html)
         # CA-466 specifies a new order of portlets, adds Standards, removes Calendar
         # Also, we have Collaborative Groups now as the #1 item
+        nct        = html.index('Network Consulting Team')
+        inform     = html.index('Informatics')
         collabGrps = html.index('Collaborative Groups')
         advocates  = html.index('Public, Patients, Advocates')
         funding    = html.index('Funding Opportunities')
@@ -78,7 +80,8 @@ class RendererTest(unittest.TestCase):
         dcp        = html.index('Division of Cancer Prevention')
         cbrg       = html.index('Cancer Biomarkers Research Group')
         bookshelf  = html.index('Bookshelf')
-        self.failUnless(collabGrps < advocates < funding < sites < committees < standards < dcp < cbrg < bookshelf)
+        self.failUnless(nct < inform < collabGrps < advocates < funding < sites < committees < standards < dcp < cbrg
+            < bookshelf)
         # CA-642 wants a "New Members" button, but CA-692 says it should be a link to EDRN Secure Site
         self.failIf('New Members' in html)
         self.failUnless('Secure Site' in html)
