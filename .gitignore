@@ -1,0 +1,9 @@
+.*.cfg
+*.py[co]
+*.log
+bin
+var
+parts
+develop-eggs
+eggs
+*.sublime-workspace

@@ -15,7 +15,7 @@ _url         = 'http://cancer.jpl.nasa.gov/products/edrnsite-portlets'
 _downloadURL = 'http://oodt.jpl.nasa.gov/dist/edrnsite'
 _author      = 'Sean Kelly'
 _authorEmail = 'sean.kelly@jpl.nasa.gov'
-_license     = 'Proprietary'
+_license     = 'ALv2'
 _namespaces  = ['edrnsite']
 _entryPoints = {
     'z3c.autoinclude.plugin': ['target=plone'],
@@ -38,7 +38,7 @@ _classifiers = [
     'Framework :: Plone',
     'Intended Audience :: Healthcare Industry',
     'Intended Audience :: Science/Research',
-    'License :: Other/Proprietary License',
+    'License :: OSI Approved :: Apache Software License',
     'Operating System :: OS Independent',
     'Programming Language :: Python',
     'Topic :: Internet :: WWW/HTTP',
