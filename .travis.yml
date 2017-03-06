@@ -3,7 +3,7 @@ sudo: false
 python: 2.7
 install:
     - mkdir -p buildout-cache/downloads
-    - python bootstrap.py -c travis.cfg
+    - python bootstrap.py -c travis.cfg --setuptools-version=34.3.1 --buildout-version=2.9.2
     - bin/buildout -N -t 3 -c travis.cfg
 script: bin/test
 cache:
