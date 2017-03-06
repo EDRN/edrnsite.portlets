@@ -17,11 +17,6 @@
                 Collaborative Groups
             </a>
         </li>
-        <li id='q-newMembers'>
-            <a href='#' tal:attributes='href string:http://www.compass.fhcrc.org/enteredrn/' i18n:translate='q-newMembers'>
-                Secure Site
-            </a>
-        </li>
         <li id='q-advocates'>
             <a href='#' tal:attributes='href string:${portalURL}/advocates' i18n:translate='q-advocates'>
                 Public, Patients, Advocates

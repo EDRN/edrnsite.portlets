@@ -84,7 +84,8 @@ class RendererTest(unittest.TestCase):
             < bookshelf)
         # CA-642 wants a "New Members" button, but CA-692 says it should be a link to EDRN Secure Site
         self.failIf('New Members' in html)
-        self.failUnless('Secure Site' in html)
+        # CA-1389 wants no more secure site link
+        self.failIf('Secure Site' in html)
         # Dan wants a Members List button (CA-789, Christos wants it to be "Member Directory")
         self.failUnless('>Member Directory<' in html)
         # Dan wants the Members List right after the sites button (CA-789, Christos wants it to be "Member Directory")

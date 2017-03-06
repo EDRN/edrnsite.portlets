@@ -6,6 +6,12 @@ mentioned below, you can learn more about them by visiting the issue tracker
 at https://oodt.jpl.nasa.gov/jira/browse/CA.
 
 
+1.1.9 — TBD
+-----------
+
+• CA-1389 - Improve login page and remove Secure Site portlet
+
+
 1.1.8 — I Had Some Chicken; Pass Me the FLOSS
 ---------------------------------------------
 
