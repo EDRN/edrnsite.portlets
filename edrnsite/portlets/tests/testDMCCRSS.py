@@ -2,7 +2,7 @@
 # Copyright 2009–2012 California Institute of Technology. ALL RIGHTS
 # RESERVED. U.S. Government Sponsorship acknowledged.
 
-import unittest2 as unittest
+import unittest
 from edrnsite.portlets.testing import EDRNSITE_PORTLETS_INTEGRATION_TESTING
 from edrnsite.portlets.portlets import dmccrss
 from plone.portlets.interfaces import IPortletType, IPortletAssignment, IPortletDataProvider, IPortletManager, IPortletRenderer
