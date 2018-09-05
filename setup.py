@@ -9,7 +9,7 @@ import os.path
 # ------------
 
 _name        = 'edrnsite.portlets'
-_version     = '1.1.10'
+_version     = '1.1.11'
 _description = 'Portlets for the EDRN Public Portal'
 _author      = 'Sean Kelly'
 _authorEmail = 'sean.kelly@jpl.nasa.gov'
